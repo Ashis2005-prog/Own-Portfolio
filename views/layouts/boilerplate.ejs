@@ -170,6 +170,7 @@
                 </div>
             </div>
         </div>
+        <span id="msg"></span>
         <div class="copyright">
             <p>Copyright &copy;Ashis's Portfolio made with <i class="fa-solid fa-heart"></i></p>
         </div>
@@ -178,11 +179,18 @@
      <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyJpnBHFXPQkneEeciORoJL3EFnpR6NLd2YZULKyxHScegLZ7L5seroQb-sOiz76qAA/exec'
         const form = document.forms['submit-to-google-sheet']
-      
+        let msg=document.querySelector("#msg");
+
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
+            .then(response =>=>{
+                msg.innerHTML="Your contact info is submitted Successfully , Keep learning";
+                setTimeout(function(){
+                    msg.innerHTML="";
+                },5000)
+                form.reset();
+            })
             .catch(error => console.error('Error!', error.message))
         })
       </script>
