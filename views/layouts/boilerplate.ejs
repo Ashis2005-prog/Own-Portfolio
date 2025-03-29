@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashis's Portfolio:Engineer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="public/Images/ 2025-02-28 103346.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/Screenshot 2025-02-28 103346.png" alt="Logo-image"> -->
+                 <a href="#" style="text-decoration: none;"><h3>Ashis's Portfolio</h3></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="header-content">
+                    <p>Full stack developer</p>
+                    <h1>Hi , I am <span>Ashis</span><br> Pradhan From India</h1>
+                </div>
+                <img src="/Images//bg-removebg-preview.png">
+            </div>
+        </div>
+    </div>
+    <!------------- about -------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Images/user.png.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit iste ex. Labore impedit placeat cupiditate facere quis eligendi eveniet dolorem quo a eius culpa consequatur magni illo earum, itaque quae assumenda esse soluta repellendus ducimus beatae? Amet error voluptatibus consequuntur aspernatur. Velit nam blanditiis recusandae minus accusantium mollitia esse!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-23</span><br>Banki H S School(Science Stream)</li>
+                            <li><span>2023-27</span><br>AIET,Bbsr(B tech in CS/IT)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id='experience'>
+                        <ul>
+                            <li><span>Web development</span><br>Web app development</li>
+                            <li><span>App development</span><br>Building android/ios apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <------------Services--------------> 
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate velit nemo excepturi laboriosam eum!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate velit nemo excepturi laboriosam eum!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate velit nemo excepturi laboriosam eum!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------Project-------------------- -->
+    <div id="project">
+        <div class="container">
+                    <h1 class="sub-title">My Projects</h1>
+                    <div class="project-lists">
+                        <div>
+                            <i class="fa-solid fa-compass"></i>
+                            <a href="#"><img src="https://miro.medium.com/v2/resize:fit:5120/0*UoNnGBySpUNH85F9" alt="Airbnb_image"></a>
+                            <h2>Airbnb</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate velit nemo excepturi laboriosam eum!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-list"></i>
+                            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJLMBw7nYnX6cZ57Okws4BV6PxLXEffT5WgQ&s" alt="TODO_img"></a>
+                            <h2>TODO</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate velit nemo excepturi laboriosam eum!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-compass"></i>
+                            <a href="#"><img src="https://miro.medium.com/v2/resize:fit:5120/0*UoNnGBySpUNH85F9" alt="Airbnb_image"></a>
+                            <h2>Airbnb</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate velit nemo excepturi laboriosam eum!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gamepad"></i>
+                            <a href="https://github.com/Ashis2005-prog/Simon_Say-app"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDWTEWMHRGx8JP47hjpK1FHDDs6379gf59nA&s" alt="Simon-says_game"></a>
+                            <h2>simon says game</h2>
+                            <p>Simon Says is a JavaScript memory game where players need to repeat a sequence of colors generated by the computer.<br> Have fun with Simon! </p>
+                            <a href="https://github.com/Ashis2005-prog/Simon_Say-app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------contact-------------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ashispradhan394@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+916371338232</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Ashis2005-prog"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ashis-pradhan-4baa66229/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BjZAOrym%2FRziq0uEgQAMiKQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="Images/Ashis_Pradhan.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy;Ashis's Portfolio made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+     </div>
+
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyJpnBHFXPQkneEeciORoJL3EFnpR6NLd2YZULKyxHScegLZ7L5seroQb-sOiz76qAA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
