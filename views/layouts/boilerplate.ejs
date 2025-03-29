@@ -184,7 +184,7 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response =>=>{
+            .then(response =>{
                 msg.innerHTML="Your contact info is submitted Successfully , Keep learning";
                 setTimeout(function(){
                     msg.innerHTML="";
